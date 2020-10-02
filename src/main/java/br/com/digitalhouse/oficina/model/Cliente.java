@@ -1,6 +1,7 @@
 package br.com.digitalhouse.oficina.model;
 
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -25,6 +26,16 @@ public class Cliente {
 	@OneToMany
 	@JoinColumn(name="cliente_id")
 	private Set<Veiculo> veiculos = new HashSet<Veiculo>();
+
+	public void setId(Long id2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public Long getId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 	
